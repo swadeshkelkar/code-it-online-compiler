@@ -16,11 +16,11 @@ const Editor = ({language, code, setCode, dark}) => {
 
     
     return(
-        <div className='sm:w-[60%] sm:h-[500px] items-center w-[90%]'>
+        <div className='sm:w-[60%] sm:h-[625px] items-center w-[90%]'>
 
               <CodeMirror
                 value={code}
-                height='500px'
+                height='625px'
                 theme={dark? 'dark': 'light'}
     
                 extensions={[langExt]}

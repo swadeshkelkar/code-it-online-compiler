@@ -28,7 +28,7 @@ function App() {
      
         <div className={` ${dark? 'dark' : ''} bg-slate-500 h-full dark:bg-slate-500 `}>
         <Header language={language} setLanguage={setLanguage} code={code} setOutput={setOutput} input={input} dark={dark} setDark={setDark} />
-          <div className='mx-auto container my-3 flex  flex-col sm:flex sm:flex-row justify-between items-center'>
+          <div className='mx-auto container my-3 flex  flex-col sm:flex sm:flex-row justify-around items-center'>
             <Editor language={language} code={code} setCode={ setCode} dark={dark} />
             <IO setInput={setInput} output={output} />
           </div>
