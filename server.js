@@ -12,7 +12,7 @@ require("dotenv").config({
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 
-router.post("/run", (req, res) => {
+router.post("/run", cors(), (req, res) => {
   const program = {
     script: req.body.code,
     language: req.body.language,

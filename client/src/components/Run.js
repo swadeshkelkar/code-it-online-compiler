@@ -15,7 +15,7 @@ const Run = ({language, code, setOutput, input}) => {
           method: 'POST',
           headers: { 'content-type': 'application/x-www-form-urlencoded' },
           data: qs.stringify(payload),
-          url: 'http://localhost:5000/run',
+          url: 'https://online-code-editor-5nfy.onrender.com/run',
         };
         const res = await axios(options);
         setOutput(res.data.output);
